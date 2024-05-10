@@ -322,13 +322,13 @@ h1 {
 }
 
 #subVisual .sub-tab .tab li:nth-child(4) {
-    display: none;
+    /* display: none; */
 }
 #subVisual .sub-tab .tab li:nth-child(5) {
-    display: none;
+    /* display: none; */
 }
 #subVisual .sub-tab .tab li:nth-child(6) {
-    display: none;
+    /* display: none; */
 }
 #subVisual .sub-tab .tab li.on {
     font-weight: 700;

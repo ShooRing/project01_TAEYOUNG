@@ -102,7 +102,7 @@
     margin-left: 6.25vw;
 }
 
-.sub1 .con2 .inner {
+/* .sub1 .con2 .inner {
     overflow-y: auto;
 }
 .sub1 .con2 .history .inner::-webkit-scrollbar {
@@ -116,16 +116,36 @@
 .sub1 .con2 .history .inner::-webkit-scrollbar-track {
     height: 30%;
     background: #7b7b7bb6;
-}
+} */
 
 .sub1 .con2 .history {
     width: 100%;
     height: 177.5vw;
-    background-image: url(../images/sub1/m/con2_bg_m.png);
+    background-image: url(../images/sub1/m/con2_bg1_m.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: scroll;
 }
+
+.sub1 .con2 .history::-webkit-scrollbar {
+    width: 1.5625vw;
+    height: 100%;
+}
+.sub1 .con2 .history::-webkit-scrollbar-thumb {
+    height: 30%;
+    /* background: #2953a6; */
+    background: #3d62b1;
+    border-radius: 3.125vw;
+}
+.sub1 .con2 .history::-webkit-scrollbar-track {
+    height: 30%;
+    background: #7b7b7bb6;
+    border-radius: 3.125vw;
+}
+
 .sub1 .con2 .history .history-wrap {
     width: 87.5vw;
     margin-left: 6.25vw;
@@ -182,10 +202,13 @@
 }
 .sub1 .con2 .history .hist-box .hist-wrap.on {
     display: block;
+    opacity: 1;
 }
 
 .sub1 .con2 .history .hist-box .hist-wrap {
     display: none;
+    opacity: 0;
+    transition: 5s;
 }
 .sub1 .con2 .history .hist-box .hist-wrap.on .hist-con {
     color: #fff;

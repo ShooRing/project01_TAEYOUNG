@@ -10,8 +10,6 @@
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
         <link rel="icon" href="images/header/favicon.ico" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <p id="skipNav"><a href="#content">본문바로가기</a></p>
@@ -587,7 +585,7 @@
 
                             <div class="vision">
                                 <div class="left-box">
-                                    <div class="left-img" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="left-img">
                                         <img src="./images/sub1/con3_img1.png" alt="고객미래가치" />
                                     </div>
                                     <div class="left-txt">
@@ -601,7 +599,7 @@
                                 </div>
 
                                 <div class="right-box">
-                                    <div class="right-img" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="right-img">
                                         <img src="./images/sub1/con3_img2.png" alt="시공능력" />
                                     </div>
                                     <div class="right-txt">
@@ -719,36 +717,34 @@
                                     <div class="value-txt">
                                         <strong>신뢰와 존중</strong>
                                         <p>
-                                            고객의 신뢰는 태영이 존재할 수 있는 근원이며, 이를 얻을 수 있는 근간은 고객에 대한 존중이라는 생각,<br />
-                                            이것이 고객에 대한 신뢰와 존중의 정신입니다.
+                                            고객의 신뢰는 태영이 존재할 수 있는 근원이며, 이를 얻을<br />
+                                            수 있는 근간은 고객에 대한 존중이라는 생각, 이것이 고객에<br />
+                                            대한 신뢰와 존중의 정신입니다.
                                         </p>
                                         <p>
-                                            주주, 투자자, 협력회사, 조직구성원 그리고,<br />
-                                            국가 및 사회 등 이해관계자에 대한 배려와<br />
-                                            상호존중의 정신으로 서로를 먼저 생각하는 것,<br />
-                                            이것이 이해관계자에 대한 신뢰와 존중의 정신입니다.
+                                            주주, 투자자, 협력회사, 조직구성원 그리고, 국가 및 사회<br />
+                                            등 이해관계자에 대한 배려와 상호존중의 정신으로 서로를<br />
+                                            먼저 생각하는 것, 이것이 이해관계자에 대한 신뢰와 존중의<br />
+                                            정신입니다.
                                         </p>
                                         <p>
-                                            인간 존중의 정신을 토대로 생산적 노사관계와<br />
-                                            상하간 신뢰 관계를 더욱 공고히 하자는 것,<br />
-                                            이것이 조직구성원간의 신뢰와 존중의 정신입니다.
+                                            인간 존중의 정신을 토대로 생산적 노사관계와 상하간 신뢰<br />
+                                            관계를 더욱 공고히 하자는 것, 이것이 조직구성원간의 신뢰와<br />
+                                            존중의 정신입니다.
                                         </p>
                                     </div>
                                     <div class="value-txt">
                                         <strong>도전과 창조</strong>
+                                        <p>기업의 창조적인 정신은 새로운 가능성을 탐색하고 미래를 개척하는 데 있어서 중요한 역할을 합니다.</p>
+                                        <p>창의적인 사고와 진취적인 행동의 실천은 태영이 미래의 꿈<br />을 현실로 이끌어 내는 원동력입니다.</p>
                                         <p>
-                                            기업의 창조적인 정신은 새로운 가능성을 탐색하고<br />
-                                            미래를 개척하는 데 있어서 중요한 역할을 합니다.
+                                            역경을 두려워하지 않고 스스로 미래를 개척해 나가겠다는<br />
+                                            결연한 의지와 실천은 태영인의 혁신적인 도전 정신입니다.
                                         </p>
                                         <p>
-                                            창의적인 사고와 진취적인 행동의 실천은 태영이<br />
-                                            미래의 꿈을 현실로 이끌어 내는 원동력입니다.
+                                            현실에 안주하지 않고 끊임없이 변화와 혁신을 추구하는 것은<br />
+                                            태영인의 창조 정신입니다.
                                         </p>
-                                        <p>
-                                            역경을 두려워하지 않고 스스로 미래를<br />
-                                            개척해 나가겠다는 결연한 의지와 실천은 <br />태영인의 혁신적인 도전 정신입니다.
-                                        </p>
-                                        <p>현실에 안주하지 않고 끊임없이 변화와 혁신을 <br />추구하는 것은 태영인의 창조 정신입니다.</p>
                                     </div>
                                     <ul class="paging">
                                         <li class="on"></li>
@@ -811,7 +807,8 @@
         <script src="js/subcommon.js"></script>
         <script type="module" src="js/sub.js"></script>
         <script>
-            AOS.init();
+            let $cons = getAll('.sub1 .con-box');
+            window.scrollTo({ top: $cons[3].offsetTop, behavior: 'smooth' });
         </script>
     </body>
 </html>
