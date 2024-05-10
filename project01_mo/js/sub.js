@@ -58,7 +58,7 @@ const sub1 = () => {
 
     $historyYear.forEach((hisYear, index) => {
         hisYear.addEventListener('click', (e) => {
-            $historyBg.style.backgroundImage = `url(images/sub1/con2_bg${index + 1}.png)`;
+            $historyBg.style.backgroundImage = `url(images/sub1/m/con2_bg${index + 1}_m.png)`;
             $historyYear.forEach((item, index) => {
                 item.classList.remove('on');
             });
@@ -712,14 +712,10 @@ const sub4 = () => {
         window.open('https://www.taeyoung.com/en/file/TY_Brochure(Eng).pdf');
     });
     $btn3.addEventListener('click', (e) => {
-        window.open(
-            'https://www.taeyoung.com/file/%EA%B4%91%EB%AA%85%20%EC%9C%A0%ED%94%8C%EB%9E%98%EB%8B%9B.pdf'
-        );
+        window.open('https://www.taeyoung.com/file/%EA%B4%91%EB%AA%85%20%EC%9C%A0%ED%94%8C%EB%9E%98%EB%8B%9B.pdf');
     });
     $btn4.addEventListener('click', (e) => {
-        window.open(
-            'https://www.taeyoung.com/file/%EA%B4%91%EB%AA%85%20%EC%9C%A0%ED%94%8C%EB%9E%98%EB%8B%9B.pdf'
-        );
+        window.open('https://www.taeyoung.com/file/%EA%B4%91%EB%AA%85%20%EC%9C%A0%ED%94%8C%EB%9E%98%EB%8B%9B.pdf');
     });
     let $myVideo = get('.vid_box');
     let $span = getAll('.vid_box span');
