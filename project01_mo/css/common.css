@@ -1,0 +1,412 @@
+/* 전체페이지공통 */
+#wrap {
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+}
+#header,
+#subheader,
+#visual,
+#subVisual,
+#container,
+#content,
+#footer {
+    width: 100vw;
+}
+.inner {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+.page .inner {
+    width: 90.5vw;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+/* --------------------------------------------------------- */
+#header .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+#header .top li {
+}
+#header .top li a {
+}
+#header .top li a i {
+    font-size: 15vw;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 1vw;
+    z-index: 10;
+}
+#header ul li a img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5vw;
+    z-index: 2;
+}
+#header .hover {
+    display: none;
+    width: 55vw;
+    height: 177.5vw;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0 6.25vw 6.25vw 0;
+    transition: 0.5s;
+}
+#header .hover.on {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+#header .hover .hoverTop {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+#header .hover .hoverMenu {
+    color: #fff;
+    position: absolute;
+    left: 15%;
+    top: 14%;
+}
+#header .hover .hoverMenu li {
+    width: 169px;
+}
+#header .hover .hoverMenu li h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+#header .hover .hoverMenu li .last {
+    margin-bottom: 14px;
+}
+
+/* --------------------------------------------------------- */
+#sidemenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 1;
+}
+
+#sidemenu .inner {
+    width: 55vw;
+    height: 200vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0 6.25vw 6.25vw 0;
+}
+#sidemenu p {
+    position: absolute;
+    left: 0;
+    top: 1vw;
+}
+#sidemenu p i {
+    font-size: 15vw;
+    color: #fff;
+}
+
+/* top-menu */
+#sidemenu .top-menu {
+    position: absolute;
+    left: 15vw;
+    top: 3.13vw;
+}
+#sidemenu .top-menu li {
+    display: inline-block;
+    margin-left: 6.25vw;
+}
+#sidemenu .top-menu li:last-child {
+    margin-left: none;
+}
+#sidemenu .top-menu li a {
+    font-size: 4.3vw;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* nav */
+#sidemenu .nav {
+    position: absolute;
+    top: 15vw;
+    left: 0vw;
+}
+#sidemenu .nav .gnb {
+    display: flex;
+    flex-direction: column;
+}
+
+#sidemenu .nav .gnb > li {
+    margin-left: 2.5vw;
+    position: relative;
+}
+#sidemenu .nav .gnb li a {
+    font-size: 6.25vw;
+    font-weight: 500;
+    padding: 3.13vw 4.69vw;
+    position: relative;
+    color: #fff;
+}
+#sidemenu .nav .gnb > li > a {
+    display: block;
+}
+
+#sidemenu .nav .gnb > li .sub_gnb {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 2vw;
+}
+
+#sidemenu .nav .gnb > li .sub_gnb li {
+    padding-bottom: 3.13vw;
+}
+
+#sidemenu .nav .sub_gnb li a {
+    font-size: 4vw;
+    font-weight: 300;
+    line-height: 1.1vw;
+
+    position: relative;
+    color: #fff;
+}
+
+/* footer */
+#footer {
+    width: 100vw;
+    background: #0d0d0d;
+    box-sizing: border-box;
+    color: #fff;
+}
+#footer .inner {
+    margin: auto;
+    width: 90.5vw;
+    height: 34.38vw;
+    box-sizing: border-box;
+    position: relative;
+    border: 0.31vw solid transparent;
+}
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5vw;
+}
+.footerUl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.81vw;
+    font-weight: 200;
+    margin-left: 10vw;
+    margin-top: 20vw;
+    opacity: 0.8;
+}
+.footerUl li {
+    text-align: center;
+    margin-right: 8vw;
+}
+.footerUl li:nth-child(2) {
+    margin-right: 10;
+}
+.footerUl li a {
+    color: #fff;
+}
+.lower {
+    position: absolute;
+    left: 3.13vw;
+    top: 42.81vw;
+    padding-top: 6.25vw;
+    display: none;
+    /* border: 0.31vw solid yellow; */
+}
+
+/* 서브페이지 header */
+
+#subheader .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+#subheader .top li {
+}
+#subheader .top li a {
+}
+#subheader .top li a i {
+    font-size: 15vw;
+    color: #2953a6;
+    position: absolute;
+    left: 0;
+    top: 1vw;
+    z-index: 500;
+}
+#subheader ul li a img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5vw;
+    z-index: 500;
+}
+
+/* 서브페이지 비주얼 */
+#subVisual {
+    width: 100%;
+    position: relative;
+}
+
+#subVisual .title {
+    padding-top: 6.25vw;
+    margin-left: 6.25vw;
+}
+#subVisual h2 {
+    font-size: 16.5625vw;
+    font-weight: 700;
+    margin-bottom: 1.5625vw;
+}
+#subVisual p {
+    font-size: 3.75vw;
+    font-weight: 400;
+}
+#subVisual .visual-banner {
+    margin-top: 33.75vw;
+}
+
+#subVisual .bg {
+    display: block;
+    /* width: 50%; */
+    width: 84.375vw;
+    height: 55vw;
+    background-image: url(../images/sub1/bg1.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    position: absolute;
+    left: 15.5vw;
+    top: 50vw;
+    z-index: -5;
+}
+#subVisual .inner {
+    width: 100%;
+    margin-top: 14.0625vw;
+    overflow: hidden;
+}
+
+#subVisual .sub-tab .tab {
+    display: flex;
+    align-items: center;
+}
+#subVisual .sub-tab .tab li {
+    font-size: 5vw;
+    margin-left: 8vw;
+    margin-bottom: 8vw;
+    text-wrap: nowrap;
+}
+
+#subVisual .sub-tab .tab li:nth-child(4) {
+    display: none;
+}
+#subVisual .sub-tab .tab li:nth-child(5) {
+    display: none;
+}
+#subVisual .sub-tab .tab li:nth-child(6) {
+    display: none;
+}
+#subVisual .sub-tab .tab li.on {
+    font-weight: 700;
+    color: #fff;
+    width: auto;
+    height: 12.5vw;
+    border: none;
+    box-sizing: border-box;
+    padding: 0vw 5vw;
+    background-color: #2953a6;
+    border-radius: 7.8125vw;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0vw 3vw 65vw, rgba(0, 0, 0, 0.23) 0vw 1.5vw 1.5vw;
+    line-height: 12.5vw;
+}
+
+#subVisual .sub-tab .tab li.on a {
+    color: #fff;
+}
+
+#subVisual .sub-tab .tab li a {
+    color: #8c8c8c;
+}
+#subVisual .visual-banner .banner1 {
+    /* width: calc(100% - 81.25vw); */
+    width: 93.75vw;
+    height: 53.75vw;
+    background-image: url(../images/sub1/m/sub1_visual_m.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border-bottom-right-radius: 1.875vw;
+    position: relative;
+}
+#subVisual .banner2 {
+    /* width: calc(100% - 260px); */
+    /* height: 384px; */
+    width: 93.75vw;
+    height: 53.75vw;
+    background-image: url(../images/sub3/sub3-visual_m.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border-bottom-right-radius: 1.875vw;
+    position: relative;
+}
+#subVisual .banner3 {
+    width: calc(100% - 260px);
+    height: 384px;
+    background-image: url(../images/sub3/sub3_visual_m.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border-bottom-right-radius: 1.875vw;
+}
+
+#subVisual .banner4 {
+    /* width: calc(100% - 260px); */
+    /* height: 384px; */
+    width: 93.75vw;
+    height: 53.75vw;
+    background-image: url(../images/sub4/m/sub4_visual_m.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border-bottom-right-radius: 1.875vw;
+}
+
+#subVisual .banner5 {
+    /* width: calc(100% - 260px); */
+    /* height: 384px; */
+    width: 93.75vw;
+    height: 53.75vw;
+    background-image: url(../images/sub5/subVisual5.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border-bottom-right-radius: 1.875vw;
+}
+#subVisual.banner6 {
+}

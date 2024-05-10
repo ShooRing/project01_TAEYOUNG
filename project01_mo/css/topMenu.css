@@ -1,0 +1,422 @@
+/* text. password */
+input[type='text'],
+input[type='password'] {
+    box-sizing: border-box;
+    height: 2.1429vw;
+    background: none;
+    border: none;
+}
+
+::placeholder {
+    color: #8c8c8c;
+    font-size: 1vw;
+}
+
+.w225 {
+    width: 14.2857vw;
+}
+.w300 {
+    width: 21.4286vw;
+    margin-left: 0.7143vw;
+}
+.w450 {
+    width: 32.1429vw;
+    margin-left: 0.7143vw;
+    height: 3.2857vw;
+}
+
+.topMenu {
+    background-image: url(../images/topMenu/loginBG.png);
+    background-position: 0 0;
+    background-size: cover;
+    width: 100%;
+    padding: 6.4286vw 0 12.1429vw 0;
+}
+
+.topMenu .login {
+    margin: 2.3571vw 0 1.7857vw 0;
+    padding-top: 2.3571vw;
+    box-sizing: border-box;
+    width: 28.5714vw;
+    background: rgba(255, 255, 255, 0.9);
+    margin: auto;
+}
+
+.topMenu h2 {
+    color: #0d0d0d;
+    font-size: 1.4286vw;
+    font-weight: 700;
+    padding-left: 2.3571vw;
+}
+.topMenu .login .top {
+    margin-top: 3.1429vw;
+    padding: 0 6.4286vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.topMenu .login .top p {
+    border-bottom: 0.0714vw solid #8c8c8c;
+    margin-bottom: 1.5714vw;
+    display: flex;
+}
+.topMenu .login .top p img {
+    padding-right: 1.0714vw;
+}
+.topMenu .login .top a {
+    border-bottom: 0.0714vw solid #8c8c8c;
+    padding: 0 0.3571vw;
+    margin: 1.6429vw 0;
+    font-size: 0.8571vw;
+}
+.topMenu .login .loginbtn {
+    text-align: center;
+    line-height: 2.1429vw;
+    width: 7vw;
+    height: 2.1429vw;
+    background: #2953a7;
+    color: #fff;
+    font-size: 0.8571vw;
+    font-weight: 700;
+    border-radius: 1.4286vw;
+    border-style: none;
+    cursor: pointer;
+}
+
+.topMenu .login .bottom {
+    height: 4.6429vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 0.0714vw solid #8c8c8c;
+
+    box-sizing: border-box;
+    margin-bottom: 1.7857vw;
+}
+
+/* ---------------------------------------------------------//login */
+
+.topMenu .join {
+    margin: 2.3571vw 0 1.7857vw 0;
+    box-sizing: border-box;
+    width: 57.1429vw;
+    height: 37.8571vw;
+    background: rgba(255, 255, 255, 0.9);
+    margin: auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topMenu .join .left {
+    padding: 2.1429vw 0.3571vw 0 0;
+    width: 27.8571vw;
+    height: 28.5714vw;
+}
+.topMenu .join .left h2 {
+    font-weight: 700;
+    font-size: 1.7857vw;
+}
+.topMenu .join .left p {
+    border-bottom: 0.0714vw solid #8c8c8c;
+    display: flex;
+    margin-left: 2.8571vw;
+    margin-top: 2.0714vw;
+}
+.topMenu .join .left .imp {
+    font-size: 1vw;
+    border: none;
+    margin-top: 0;
+    color: #8c8c8c;
+    padding-left: 1.4286vw;
+    line-height: 110%;
+}
+
+.topMenu .join .right {
+    padding: 2.1429vw 0 0 0.7143vw;
+    width: 27.8571vw;
+    height: 28.5714vw;
+}
+.topMenu .join .right div {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 25vw;
+    height: 8vw;
+    padding: 0.7143vw 0.8571vw;
+    border: 0.0714vw solid #ccc;
+    font-size: 0.8571vw;
+    line-height: 1.5714vw;
+    background-color: #fff;
+    color: gray;
+    margin-bottom: 1.7857vw;
+}
+
+.topMenu .join .bottom {
+    height: 6.4286vw;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+.topMenu .join .bottom a {
+    text-align: center;
+    line-height: 2.8571vw;
+    width: 9.2857vw;
+    height: 2.8571vw;
+    background: #2953a7;
+    color: #fff;
+    font-size: 1.1429vw;
+    font-weight: 700;
+    border-radius: 1.4286vw;
+    border-style: none;
+    cursor: pointer;
+    margin: 1.7857vw;
+}
+.topMenu .join .bottom .w2 {
+    width: 9.2857vw;
+    height: 2.8571vw;
+    background: #fff;
+    color: #2953a7;
+    border: 0.0714vw solid #2953a7;
+    font-size: 1.1429vw;
+    font-weight: 700;
+    border-radius: 1.4286vw;
+    cursor: pointer;
+    margin: 1.7857vw;
+}
+.topMenu .join .bottom .w1 {
+    width: 6.0714vw;
+    height: 2.1429vw;
+    background: #fff;
+    color: #2953a7;
+    border: 0.0714vw solid #2953a7;
+    font-size: 1vw;
+    font-weight: 200;
+    border-radius: 1.4286vw;
+    cursor: pointer;
+    position: absolute;
+    left: 20vw;
+    top: 8.5714vw;
+    text-align: center;
+    line-height: 2.1429vw;
+}
+/* ---------------------------------------------------------//join */
+
+.topMenu .myPage {
+    width: 75.7143vw;
+    margin: auto;
+}
+.topMenu .myPage .all {
+    background: rgba(255, 255, 255, 0.9);
+    width: 75.7143vw;
+    height: 67.5vw;
+    padding: 0 3.5714vw;
+    box-sizing: border-box;
+    border-radius: 1.4286vw;
+}
+.topMenu .myPage .all h2 {
+    font-size: 1.7857vw;
+    color: #0d0d0d;
+    padding: 3.2143vw 0 5vw 0;
+}
+
+.topMenu .myPage .all .one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topMenu .myPage .all h3 {
+    font-size: 1.4286vw;
+    color: #0d0d0d;
+    font-weight: 700;
+    margin-bottom: 0.7143vw;
+}
+
+.topMenu .myPage .all .one .one_left .one_1 #sel {
+    width: 58.5714vw;
+    height: 2.1429vw;
+    color: #8c8c8c;
+    margin-bottom: 1.0714vw;
+}
+.topMenu .myPage .all .one .one_left .one_2 {
+    display: flex;
+}
+.topMenu .myPage .all .one .one_left .one_2 h3 {
+    margin-right: 8.5714vw;
+}
+.topMenu .myPage .all .one .one_left .one_2 span {
+    font-weight: 700;
+    margin-right: 1.3571vw;
+}
+.topMenu .myPage .all .one .one_left .one_2 p {
+    margin-left: 2.4286vw;
+    font-size: 1vw;
+}
+
+.topMenu .myPage .all .one .one_left .toggle {
+    border: 0.0714vw solid #000;
+    position: relative;
+    display: block;
+    width: 2.6429vw;
+    height: 1.4286vw;
+    border-radius: 0.7143vw;
+    background-color: #fff;
+    cursor: pointer;
+}
+.topMenu .myPage .all .one .one_left .toggle .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.4286vw;
+    height: 1.4286vw;
+    background: linear-gradient(to bottom, #2953a7, #2953a7);
+    border-radius: 50%;
+    transform: scale(0.9);
+}
+
+.topMenu .myPage .all .one .one_left .toggle.active .indicator {
+    left: 2.6429vw;
+}
+
+.topMenu .myPage .all .one .one_left .one_2 .toggle span {
+    margin-left: 8.5714vw;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+.topMenu .myPage .all .one .one_left .one_3 {
+    display: flex;
+}
+.topMenu .myPage .all .one .one_left .one_3 h3 {
+    margin-right: 9.2857vw;
+}
+
+.topMenu .myPage .all .one .one_left .one_3 span {
+    margin: 0 4.6429vw;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+.topMenu .myPage .all .one .one_ringt .img {
+    width: 7.1429vw;
+    height: 9.2857vw;
+    background: #8c8c8c;
+    margin-bottom: 0.7143vw;
+}
+.topMenu .myPage .all .one .one_ringt .img i {
+    font-size: 4.2857vw;
+    color: #fff;
+    line-height: 9.2857vw;
+    padding: 0 1.4286vw;
+}
+.topMenu .myPage .all .one .one_ringt .img + p {
+    width: 6.9286vw;
+    height: 2.1429vw;
+    border-radius: 1.7857vw;
+    background: #fff;
+    border: 0.0714vw solid #2953a6;
+    color: #2953a6;
+    font-size: 1vw;
+    text-align: center;
+    line-height: 2.1429vw;
+}
+
+.topMenu .myPage .all .two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topMenu .myPage .all .two p {
+    border-bottom: rgb(0, 0, 0) 0.0714vw solid;
+}
+.topMenu .myPage .all .two h3 {
+    margin-top: 1.0714vw;
+}
+
+.topMenu .myPage .all .bottom1 {
+    margin-top: 3.2143vw;
+    display: flex;
+    padding-bottom: 2.8571vw;
+    border-bottom: 0.0714vw solid #000;
+}
+.topMenu .myPage .all .bottom1 h3 {
+    margin-right: 1.4286vw;
+}
+
+.topMenu .myPage .all .bottom1 label {
+    margin-right: 0.7143vw;
+}
+.topMenu .myPage .all .bottom2 {
+    position: relative;
+    margin: 3.2143vw 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.5714vw;
+    box-sizing: border-box;
+    border-bottom: 0.0714vw solid #000;
+    height: 7.1429vw;
+}
+.topMenu .myPage .all .bottom2 h3 {
+    margin-right: 1.4286vw;
+}
+.topMenu .myPage .all .bottom2 a {
+    height: 1.5714vw;
+    margin-right: 1.4286vw;
+    font-weight: 700;
+    color: #8c8c8c;
+    border-bottom: #8c8c8c 0.0714vw solid;
+}
+.topMenu .myPage .all .bottom2 .txt {
+    position: absolute;
+    bottom: 2.8571vw;
+    font-size: 1vw;
+    color: #8c8c8c;
+}
+
+.topMenu .myPage .all .bottom3 {
+    font-size: 1vw;
+    font-weight: 300;
+    color: #8c8c8c;
+    display: flex;
+}
+.topMenu .myPage .all .bottom3 a {
+    height: 1.2857vw;
+    margin-left: 0.7143vw;
+    color: #8c8c8c;
+    border-bottom: #8c8c8c 0.0714vw solid;
+}
+
+.topMenu .myPage .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.1429vw 0 3.2143vw 0;
+}
+
+.topMenu .myPage .btn .save {
+    background: #2953a7;
+    color: #fff;
+    display: flex;
+    width: 9.2857vw;
+    height: 1.4286vw;
+    padding: 0.6798vw 0vw 0.6774vw 0vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.7857vw;
+    margin: 0 0.7143vw;
+}
+.topMenu .myPage .btn .cancel {
+    background: #fff;
+    color: #2953a7;
+    display: flex;
+    width: 9.2857vw;
+    height: 1.4286vw;
+    padding: 0.6798vw 0vw 0.6774vw 0vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.7857vw;
+    border: 0.0714vw solid #2953a7;
+    margin: 0 0.7143vw;
+}

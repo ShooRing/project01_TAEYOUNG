@@ -1,0 +1,609 @@
+#visual > .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+#visual > .top li {
+}
+#visual > .top li a {
+}
+#visual > .top li a i {
+    font-size: 15vw;
+    color: #fff;
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    z-index: 500;
+}
+#visual > ul li a img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5vw;
+    z-index: 500;
+}
+
+/* 각페이지별 */
+
+:root {
+    --swiper-theme-color: #fff;
+}
+
+#visual .swiper-pagination-bullet {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #2953a6;
+}
+
+#visual .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #fff;
+}
+
+#visual {
+    width: 100%;
+    position: relative;
+    height: 180vw;
+    color: #fff;
+}
+
+#visual .visualTxt h3 {
+    font-size: 8vw;
+    font-weight: 500;
+}
+
+#visual .visualTxt p {
+    font-size: 4vw;
+    font-weight: 300;
+    opacity: 0.8;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper {
+    width: 100%;
+}
+
+#visual .swiper-slide {
+    width: 100%;
+    text-align: center;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#visual .visualTxt {
+    position: absolute;
+    top: 50vw;
+    text-align-last: left;
+}
+
+#visual .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 180vw;
+    object-fit: cover;
+}
+
+#visual .swiper-pagination {
+    opacity: 1;
+    color: #fff;
+}
+
+#visual .visualTxt {
+    color: #fff;
+    padding: 5vw;
+}
+
+.main .con-box {
+    width: 100vw;
+}
+.main .con-box .inner {
+    height: 50vw;
+}
+.main .con-box > h2 {
+    font-size: 6vw;
+    letter-spacing: -0.0214vw;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 3.5714vw;
+}
+.mainVisual {
+    width: 100%;
+}
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    width: 100%;
+}
+.inner {
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------------visual */
+
+.main h2 {
+    letter-spacing: 0px;
+}
+
+.main .top {
+    position: fixed;
+    right: 5%;
+    bottom: 4.6875vw;
+    width: 14.0625vw;
+    height: 14.0625vw;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background: #183672;
+    display: none;
+    cursor: pointer;
+}
+.main .top.on {
+    display: block;
+}
+.main .top i {
+    font-size: 6.25vw;
+    line-height: 14.0625vw;
+}
+
+.main .con-box {
+    width: 100vw;
+}
+
+.main .about .one {
+    font-size: 5vw;
+    font-weight: 800;
+    color: #183672;
+    text-align: center;
+    margin-bottom: 5.3571vw;
+    margin-top: 6vw;
+}
+
+.main .con-box h2 {
+    font-size: 3.5714vw;
+    font-weight: 500;
+}
+
+.main .about {
+    position: relative;
+}
+
+.main .about .color {
+    background: #2953a6;
+    width: 100vw;
+    height: 60vw;
+    position: absolute;
+    top: 123.85vw;
+}
+
+.main .about .inner {
+    width: 90.5vw;
+    height: 180vw;
+    z-index: 100;
+}
+
+.main .about .aboutTitle {
+    width: 87.5vw;
+    margin-bottom: 5.7143vw;
+}
+.main .about .aboutTitle span {
+    font-size: 1vw;
+    color: #183672;
+}
+.main .about .aboutTitle > h2 {
+    font-size: 7.5vw;
+    font-weight: 700;
+    color: #183672;
+}
+.main .about .aboutTitle h3 {
+    font-size: 6vw;
+    font-weight: 200;
+    color: #183672;
+}
+.main .about .aboutTitle p {
+    margin-top: 2.6vw;
+    font-size: 2.6vw;
+    color: #8c8c8c;
+}
+
+.main .about .aboutCon img {
+    width: 100%;
+    height: 61.1781vw;
+    display: none;
+}
+.main .about .aboutCon img.on {
+    width: 100%;
+    height: 61.1781vw;
+    display: block;
+}
+.main .about .aboutCon .btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 115vw;
+}
+.main .about .aboutCon .btns li {
+    width: 25.5375vw;
+    height: 8.5125vw;
+    color: #2953a6;
+    background: #f2f2f2;
+    border-radius: 5.625vw 5.625vw 0vw 0vw;
+    margin-left: 1.1429vw;
+    border: #2953a6 1px solid;
+    cursor: pointer;
+}
+.main .about .aboutCon .btns > li p {
+    font-size: 3.75vw;
+    font-weight: 200;
+    text-align: center;
+    line-height: 8.5vw;
+}
+.main .about .aboutCon .btns > li.on {
+    width: 25.5375vw;
+    height: 8.5125vw;
+    color: #ffffff;
+    background: #2953a6;
+    border-radius: 5.625vw 5.625vw 0vw 0vw;
+    cursor: pointer;
+    font-weight: 500;
+}
+.main .about .aboutCon .txt {
+    display: none;
+}
+.main .about .aboutCon .txt.on {
+    position: absolute;
+    top: 135vw;
+    width: 87.5vw;
+    color: #ffffff;
+    display: block;
+}
+.main .about .aboutCon .txt p {
+    font-weight: 200;
+    font-size: 4vw;
+}
+.main .about .aboutCon .txt h2 {
+    font-size: 6vw;
+    margin-bottom: 2vw;
+}
+
+.main .about .aboutCon a {
+    border-radius: 1.0938vw;
+    width: 31.25vw;
+    height: 8.75vw;
+    background: #ffffff;
+    color: #2953a6;
+    border: 0.0714vw solid #2953a6;
+    position: absolute;
+    right: 1vw;
+    top: 172vw;
+    text-align: center;
+    line-height: 8.75vw;
+    font-size: 3.5vw;
+}
+.main .about .aboutCon a i {
+    margin-left: 1.0714vw;
+    vertical-align: auto;
+}
+/* -------------------------------------------------------------------------about */
+.main .business {
+}
+.main .business .inner {
+    text-align: center;
+    width: 90.25vw;
+    height: 320vw;
+    z-index: 100;
+}
+
+.main .business h2 {
+    font-weight: 800;
+    margin-top: 9.2857vw;
+    font-size: 5vw;
+    color: #183672;
+}
+
+.main .business .subTitle {
+    font-size: 3vw;
+    margin-top: 2.6vw;
+    margin-bottom: 10vw;
+    color: #2953a6;
+}
+.main .business .busCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+}
+.main .business .busCon li {
+    position: relative;
+    margin-bottom: 7.1429vw;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.0714vw;
+    width: 90vw;
+    height: 35.9375vw;
+    transition: 0.3s;
+}
+
+.main .business .busCon li:nth-child(1) {
+    background-image: url(../images/main/M-b1.png);
+}
+
+.main .business .busCon li:nth-child(2) {
+    background-image: url(../images/main/M-b2.png);
+}
+
+.main .business .busCon li:nth-child(3) {
+    background-image: url(../images/main/M-b3.png);
+}
+.main .business .busCon li:nth-child(4) {
+    background-image: url(../images/main/M-b4.png);
+}
+.main .business .busCon li:nth-child(5) {
+    background-image: url(../images/main/M-b5.png);
+}
+
+.main .business .busCon li div p + p {
+    opacity: 0;
+}
+
+.main .business .busCon li div {
+    text-align-last: center;
+    position: absolute;
+    left: 20vw;
+    top: 14.2857vw;
+    width: 54.375vw;
+
+    font-size: 6.5625vw;
+    font-weight: 700;
+    color: #fff;
+}
+.main .business .busCon li div::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.1429vw;
+    background-color: #fff;
+    position: absolute;
+    left: 0vw;
+    top: 10vw;
+}
+
+/* ---------------on */
+.main .business .busCon li.on {
+    width: 90vw;
+    height: 100vw;
+}
+
+.main .business .busCon li.on div p + p {
+    display: block;
+    text-align-last: left;
+    font-size: 3.6219vw;
+    line-height: 6vw;
+    color: #ffffff;
+    font-weight: 100;
+    margin-top: 8vw;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.main .business .busCon li.on a div {
+    text-align-last: center;
+    position: absolute;
+    left: 20vw;
+    top: 14.2857vw;
+    width: 54.375vw;
+    height: 112.5vw;
+
+    font-weight: 700;
+    color: #fff;
+    transition: 0.3s;
+}
+/* -------------------------------------------------------------------------business */
+.main .news {
+    background: #2953a6;
+    color: #fff;
+    height: 278.75vw;
+}
+.main .news .inner {
+    width: 89vw;
+    padding-top: 14vw;
+    position: relative;
+    height: 278.75vw;
+}
+.main .news span {
+    font-size: 3vw;
+    margin-bottom: 3.5vw;
+}
+.main .news h3 {
+    font-size: 4.0625vw;
+    font-weight: 100;
+    padding-top: 2vw;
+}
+.main .news h2 {
+    padding-top: 5vw;
+    font-size: 5.3125vw;
+    font-weight: 700;
+}
+
+.main .news .sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10.0714vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main .news .sns a:not(:first-child) {
+    margin-left: 10vw;
+}
+.main .news .sns a img {
+    border: 0.0714vw solid #fff;
+    padding: 2vw;
+    border-radius: 15vw;
+    margin-bottom: 0.7143vw;
+}
+.main .news .sns a p {
+    font-size: 4vw;
+    text-align: center;
+    color: #fff;
+    text-indent: -2vw;
+    box-sizing: border-box;
+}
+.main .news .sns a:last-child p {
+    font-size: 4vw;
+    text-align: center;
+    color: #fff;
+    text-indent: 0vw;
+    box-sizing: border-box;
+}
+.main .news .arrow {
+    position: absolute;
+    transform: scale(1.4);
+    right: 6vw;
+    bottom: 60vw;
+    width: 28vw;
+    height: 28vw;
+}
+
+.main .news .xi-long-arrow-right {
+    font-size: 15vw;
+    position: absolute;
+    right: 13vw;
+    bottom: 67vw;
+    color: #fff;
+}
+
+.main .news .newsCon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main .news .newsCon li {
+    width: 38vw;
+    height: 51.875vw;
+    margin-top: 7.1429vw;
+    border: 0.0714vw solid #fff;
+    border-radius: 3.3281vw 0vw 3.3281vw 0vw;
+    padding: 2vw 2vw 2vw 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #fff;
+}
+.main .news .newsCon li .newsType {
+    font-size: 3.5vw;
+    padding: 2vw 0vw;
+}
+.main .news .newsCon li span {
+    font-size: 5vw;
+}
+.main .news .newsCon li a {
+    border: 0.0714vw solid #fff;
+    border-radius: 6.5714vw;
+    padding: 1vw;
+    color: #fff;
+    display: inline-block;
+    width: 6.5vw;
+    height: 6.5vw;
+    font-size: 6.5vw;
+    line-height: 6.5vw;
+    text-align: center;
+}
+
+.main .news .newsCon li p {
+    font-size: 3.5vw;
+    margin-top: 0.5vw;
+}
+.main .news .newsCon li .more {
+    margin-top: 1.0714vw;
+    border-radius: 1vw;
+    width: 25vw;
+    height: 6.56vw;
+    background: #fff;
+    color: #2953a6;
+    border: 0.0714vw solid #fff;
+    text-align: center;
+    vertical-align: top;
+    line-height: 1.5vw;
+    font-size: 3.5vw;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin: auto;
+}
+/* ---------------------------------------------------------on */
+
+.main .news .newsCon li.on {
+    color: #2953a6;
+    background: #fff;
+}
+.main .news .newsCon li.on .more {
+    color: #fff;
+    background: #2953a6;
+}
+/* -------------------------------------------------------------------------news */
+.main .report {
+    text-align: center;
+    position: relative;
+}
+
+.main .report .inner {
+    height: 150.5vw;
+}
+.main .report h2 {
+    font-size: 5vw;
+    font-weight: 700;
+    color: #183672;
+    margin-top: 20vw;
+}
+.main .report p {
+    padding-top: 2.5vw;
+    color: #183672;
+    margin-bottom: 10vw;
+    font-size: 2.5vw;
+}
+
+.main .report .reportCon {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 21.875vw;
+}
+.main .report .reportCon li {
+    border: 0.0714vw solid #2953a6;
+
+    padding: 3vw;
+    margin: 1vw;
+    box-sizing: border-box;
+    width: 37.5vw;
+    height: 42.5969vw;
+    border-radius: 6vw 0 6vw 0;
+    box-shadow: 1vw 1vw 1vw 0vw #3d62b1;
+    background: #fff;
+    margin-bottom: 8vw;
+}
+.main .report .reportCon li p {
+    margin-bottom: 8vw;
+    font-size: 3vw;
+    width: 20vw;
+    text-align-last: left;
+    color: #2953a6;
+}
+.main .report .reportCon li h3 {
+    box-sizing: border-box;
+    font-size: 10vw;
+    color: #2953a6;
+    text-align: right;
+    font-weight: 800;
+}
+.main .report .reportCon li span {
+    font-size: 10vw;
+    font-weight: 800;
+}
