@@ -56,6 +56,20 @@ const sub1 = () => {
         });
     });
 
+
+      $subtab.forEach((subtab, index) => {
+        subtab.addEventListener('click', (e) => {
+            ty = $cons[index].offsetTop + 950;
+            window.scrollTo({ top: ty, behavior: 'smooth' });
+
+            $subtab.forEach((item, index) => {
+                item.classList.remove('on');
+            });
+            e.currentTarget.classList.add('on');
+        });
+    });
+    
+    
     $historyYear.forEach((hisYear, index) => {
         hisYear.addEventListener('click', (e) => {
             $historyBg.style.backgroundImage = `url(images/sub1/m/con2_bg${index + 1}_m.png)`;
@@ -86,48 +100,48 @@ const sub1 = () => {
         }
     });
 
-    $subtab.forEach((subtab, index) => {
-        subtab.addEventListener('click', (e) => {
-            function scrollTo(element, duration) {
-                var e = document.documentElement;
-                if (e.scrollTop === 0) {
-                    var t = e.scrollTop;
-                    ++e.scrollTop;
-                    e = t + 1 === e.scrollTop-- ? e : document.body;
-                }
-                scrollToC(e, e.scrollTop, element, duration);
-            }
+    // $subtab.forEach((subtab, index) => {
+    //     subtab.addEventListener('click', (e) => {
+    //         function scrollTo(element, duration) {
+    //             var e = document.documentElement;
+    //             if (e.scrollTop === 0) {
+    //                 var t = e.scrollTop;
+    //                 ++e.scrollTop;
+    //                 e = t + 1 === e.scrollTop-- ? e : document.body;
+    //             }
+    //             scrollToC(e, e.scrollTop, element, duration);
+    //         }
 
-            function scrollToC(element, from, to, duration) {
-                if (duration < 0) return;
-                if (typeof from === 'object') from = from.offsetTop;
-                if (typeof to === 'object') to = to.offsetTop;
+    //         function scrollToC(element, from, to, duration) {
+    //             if (duration < 0) return;
+    //             if (typeof from === 'object') from = from.offsetTop;
+    //             if (typeof to === 'object') to = to.offsetTop;
 
-                scrollToX(element, from, to, 0, 1 / duration, 20, linearTween);
-            }
+    //             scrollToX(element, from, to, 0, 1 / duration, 20, linearTween);
+    //         }
 
-            function scrollToX(element, x1, x2, t, v, step, operacion) {
-                if (t < 0 || t > 1 || v <= 0) return;
-                element.scrollTop = x1 - (x1 - x2) * operacion(t);
-                t += v * step;
+    //         function scrollToX(element, x1, x2, t, v, step, operacion) {
+    //             if (t < 0 || t > 1 || v <= 0) return;
+    //             element.scrollTop = x1 - (x1 - x2) * operacion(t);
+    //             t += v * step;
 
-                setTimeout(function () {
-                    scrollToX(element, x1, x2, t, v, step, operacion);
-                }, step);
-            }
+    //             setTimeout(function () {
+    //                 scrollToX(element, x1, x2, t, v, step, operacion);
+    //             }, step);
+    //         }
 
-            function linearTween(t) {
-                return t;
-            }
+    //         function linearTween(t) {
+    //             return t;
+    //         }
 
-            scrollTo($cons[index].offsetTop, 1000);
+    //         scrollTo($cons[index].offsetTop, 1000);
 
-            $subtab.forEach((item, index) => {
-                item.classList.remove('on');
-            });
-            e.currentTarget.classList.add('on');
-        });
-    });
+    //         $subtab.forEach((item, index) => {
+    //             item.classList.remove('on');
+    //         });
+    //         e.currentTarget.classList.add('on');
+    //     });
+    // });
 
     $top.addEventListener('click', (e) => {
         ty = 0;
