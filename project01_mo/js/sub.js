@@ -120,7 +120,7 @@ const sub1 = () => {
                 return t;
             }
 
-            scrollTo($cons[index].offsetTop + 1100, 1000);
+            scrollTo($cons[index].offsetTop, 1000);
 
             $subtab.forEach((item, index) => {
                 item.classList.remove('on');
