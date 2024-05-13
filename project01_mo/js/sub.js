@@ -100,7 +100,7 @@ const sub1 = () => {
         }
     });
 
-    console.log (subtab)
+    console.log ($subtab)
     // $subtab.forEach((subtab, index) => {
     //     subtab.addEventListener('click', (e) => {
     //         function scrollTo(element, duration) {
