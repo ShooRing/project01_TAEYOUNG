@@ -31,7 +31,7 @@ const subVisual = () => {};
 
 const sub1 = () => {
     let $cons = getAll('.sub1 .con-box');
-    let $subtab = getAll('.banner1 .sub-tab .tab li');
+    let $subtab = getAll('.sub-tab .tab li');
     let $top = get('.sub1 .top');
     let $historyBg = get('.sub1 .con2 .history');
     let $historyYear = getAll('.sub1 .history .scroll-tab ul li');
