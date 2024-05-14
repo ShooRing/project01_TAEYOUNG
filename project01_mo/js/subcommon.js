@@ -25,14 +25,14 @@ const subheaderHover = () => {
     });
 };
 
-const familySite = () => {
-    let $family = get('#footer .family .title');
-    let $sites = get('#footer .family .sites');
-    $family.addEventListener('click', (e) => {
-        e.preventDefault();
-        $sites.classList.toggle('on');
-    });
-};
+// const familySite = () => {
+//     let $family = get('#footer .family .title');
+//     let $sites = get('#footer .family .sites');
+//     $family.addEventListener('click', (e) => {
+//         e.preventDefault();
+//         $sites.classList.toggle('on');
+//     });
+// };
 const topCilck = () => {
     let $maintop = get('.page .topbtn ');
     let ty = 0;
