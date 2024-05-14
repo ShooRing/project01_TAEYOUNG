@@ -9,7 +9,7 @@ let $moreLink = getAll('.main .aboutCon .listBox li .about-wrap .txt .more a');
 let $subtab = getAll('sub-tab .tab li');
 let $cons = getAll('.sub1 .con-box');
 
-console.log($more);
+
 
 $more.forEach((more, index) => {
     more.addEventListener('click', (e) => {
