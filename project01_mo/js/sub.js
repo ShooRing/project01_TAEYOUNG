@@ -6,7 +6,7 @@ const getAll = (target) => document.querySelectorAll(target);
 
 let $more = getAll('.main .aboutCon .listBox li .about-wrap .txt .more');
 let $moreLink = getAll('.main .aboutCon .listBox li .about-wrap .txt .more a');
-let $subtab = getAll('.banner1 .sub-tab .tab li');
+// let $subtab = getAll('.banner1 .sub-tab .tab li');
 let $cons = getAll('.sub1 .con-box');
 
 console.log($more);
@@ -100,7 +100,7 @@ const sub1 = () => {
         }
     });
 
-    console.log ($subtab)
+   
     // $subtab.forEach((subtab, index) => {
     //     subtab.addEventListener('click', (e) => {
     //         function scrollTo(element, duration) {
