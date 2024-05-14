@@ -35,7 +35,7 @@ const sub1 = () => {
     let $top = get('.sub1 .top');
     let $historyBg = get('.sub1 .con2 .history');
     let $historyYear = getAll('.sub1 .history .scroll-tab ul li');
-    consol.log($historyYear)
+    // consol.log($historyYear)
     let $historyBox = getAll('.sub1 .hist-wrap');
     let $scrollTab = getAll('.sub1 .hist');
     let $images = getAll('.sub1 .con3 .vision img');
