@@ -6,7 +6,6 @@ const getAll = (target) => document.querySelectorAll(target);
 
 let $more = getAll('.main .aboutCon .listBox li .about-wrap .txt .more');
 let $moreLink = getAll('.main .aboutCon .listBox li .about-wrap .txt .more a');
-// let $subtab = getAll('.banner1 .sub-tab .tab li');
 let $subtab = getAll('sub-tab .tab li');
 let $cons = getAll('.sub1 .con-box');
 
@@ -36,6 +35,7 @@ const sub1 = () => {
     let $top = get('.sub1 .top');
     let $historyBg = get('.sub1 .con2 .history');
     let $historyYear = getAll('.sub1 .history .scroll-tab ul li');
+    consol.log($historyYear)
     let $historyBox = getAll('.sub1 .hist-wrap');
     let $scrollTab = getAll('.sub1 .hist');
     let $images = getAll('.sub1 .con3 .vision img');
